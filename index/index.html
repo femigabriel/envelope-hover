@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <title>Notification-Challenge</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+         <header>
+          <h1>Notification</h1>
+          <div class="marked">
+             <h3>Marked as read</h3>
+          </div>
+         </header>
+          <div class="flex" v-for="data in datas" :key="data">
+            <input type="radio" id="radio" />
+            <div class="todo-content">
+              <h4>There is a new updated version of our software available</h4>
+              <!-- <p div v-if="data.description">{{ data.description }}</p> -->
+              <div class="todo-info">
+                <div class="todo-date" v-if="data.date">
+                  <p></p>
+                </div>
+                <div class="todo-name" v-if="data.name">
+                  <span><img src="../images/icons8-person-32.png" alt="" /></span>
+                  <span class="name"> {{ data.name }}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    
+        <form action="">
+          <div class="input">
+
+          </div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="question.css" />
+    <title>Questionaire form</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <h1>𝒢𝑒𝓃𝑒𝓇𝒶𝓁 𝒬𝓊𝑒𝓈𝓉𝒾❁𝓃𝓈</h1>
+        <div class="questions">
+          <div class="flex">
+            <div class="content">
+              <p>Do you Accept All Major Credit Cards?</p>
+              <i class="las la-plus-square" id="collapseIcon"> </i>
+            </div>
+            <p class="collapse">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              aut aspernatur numquam aliquam fugiat ullam. Accusantium odio
+              molestias dolor voluptatum consequuntur recusandae error pariatur
+              laudantium ipsa, ducimus, eveniet ex sunt.
+            </p>
+          </div>
+          <div class="flex">
+            <div class="content">
+              <p>Do you Accept All Major Credit Cards?</p>
+              <i class="las la-plus-square"></i>
+            </div>
+          </div>
+          <div class="flex">
+            <div class="content">
+              <p>Do you Accept All Major Credit Cards?</p>
+              <i class="las la-plus-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- For Genesis WordPress framework from https://wpbeaches.com/create-expandcollapse-faq-accordion-collapse-click/ -->
+
+    <h3>FAQs</h3>
+
+    <p class="accordion">Q1. What currency is the course charged in?</p>
+    <div class="panel">A. The course is charged in Australian dollars.</div>
+
+    <p class="accordion">Q2. What if the course doesn’t help me?</p>
+    <div class="panel">
+      A. If it doesn't help you I'll refund the purchase price in full.
+    </div>
+
+    <p class="accordion">Q3. When will the webinars take place?</p>
+    <div class="panel">
+      A. Depending on the mix of countries and time zones for people attending
+      the webinars, I will pick a time that works best for most participants.
+      All webinars will be recorded so you can listen to them again. The private
+      Facebook group will obviously be available 24/7 and I’ll be monitoring and
+      contributing to the discussion regularly.
+    </div>
+
+    <p class="accordion">Q4. What is the self-directed mentoring program?</p>
+    <div class="panel">
+      A. The self-directed mentoring program is designed to help you set-up and
+      run an effective mentee-mentor relationship as part of the course.
+    </div>
+  </body>
+  <script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+for (i = 0; i < acc.length; i++) {
+ acc[i].onclick = function(){
+ this.classList.toggle("active");
+ this.nextElementSibling.classList.toggle("show");
+};
+}
+
+        // let content = document.getElementById("collapse");
+        // let icon = document.getElementById("collapseIcon");
+        // if(content.style.display == "block") {
+        //     content.style.display = "none"
+        //     collapseIcon.innerHTML = "S"
+        // }
+
+
+
+    function showhide()
+  </script>
+</html>

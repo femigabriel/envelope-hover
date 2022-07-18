@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="counter.css">
+    <title>counter</title>
+</head>
+<body>
+    <div class="app">
+        <div class="container">
+            <div class="header">
+                <h2>Counter</h2>
+            </div>
+                <!-- adding button and heading to show the digits -->
+            <h1 id="counting"></h1>
+            <div class="flex">
+                  <!--increment() and decrement() functions on button click-->
+                <button onclick="increment()">Increase</button>
+                <button onclick="reset()">Reset</button>
+                <button onclick="decrement()">Decrease</button>
+            </div>
+        </div>
+    </div>
+ <script>
+
+let data = 0;
+
+//making h2 the default value of data = 0 
+document.getElementById("counting").innerText = data;
+
+//creation of increment function
+function increment() {
+	data = data + 1;
+	document.getElementById("counting").innerText = data;
+}
+//creation of decrement function (if statement to make the counting number not to exceed 0)
+function decrement() {
+    if(data > 0){
+        data = data -=1 ;
+    }
+	document.getElementById("counting").innerText = data;
+}
+//creation of reset function
+function reset() {
+    data =  0;
+    document.getElementById("counting").innerText = data;
+}
+
+
+    </script>
+</body>
+</html>

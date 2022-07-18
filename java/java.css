@@ -1,0 +1,36 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+body {
+    color:;
+    background: red;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+button {
+    padding: 20px 35px;
+    background: red;
+    margin: 40px 270px;
+border-color: aliceblue;
+}
+.background {
+    background: #333;
+    /* width: 620px; */
+    /* height: 100px; */
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+}
+h1 {
+    /* padding-left: 20px;
+    padding-top: 20px; */
+    font-size: 42px;
+    color: aliceblue;
+}
+span {
+    color: blue;
+}

@@ -1,0 +1,62 @@
+@import url('http://fonts.cdnfonts.com/css/neue-haas-grotesk-text-pro');
+body {
+ background: #ffffff;
+ /* color: #eeeeee; */
+font-family: 'Neue Haas Grotesk Text Pro', sans-serif;
+}
+.app {
+  background: #efeef5;
+  width: 1050px;
+  height: 700px;
+  position: absolute;
+  left: 140px;
+  top: 60px;
+  border-radius: 10px;
+}
+.container {
+  color: #515055;
+  width: 650px;
+  height: 600px;
+  background: #fff;
+  position: absolute;
+  border-radius: 10px;
+  left: 200px;
+  top: 120px;
+  border-bottom: 2px solid #f8f8f8;
+}
+/* .input {
+  color: #515055;
+  width: 700px;
+  height: 250px;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  left: 175px;
+  top: 440px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */
+
+/*  */
+header {
+  height: 30px;
+ 
+}
+h1 {
+  align-content: center;
+  justify-content: center;
+  margin: 15px 30px;
+  /* border-bottom: 3px solid purple; */
+  width: 55px;
+  color: #515055;
+}
+/* .input {
+  color: #515055;
+  width: 700px;
+  height: 200px;
+  border-radius: 10px;
+  background: white;
+  position: absolute;
+  left: 175px;
+  top: 500px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+} */

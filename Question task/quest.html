@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="quest.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- For Genesis WordPress framework from https://wpbeaches.com/create-expandcollapse-faq-accordion-collapse-click/ -->
+    <div id="app">
+      <div class="container">
+        <h1>𝒢𝑒𝓃𝑒𝓇𝒶𝓁 𝒬𝓊𝑒𝓈𝓉𝒾❁𝓃𝓈</h1>
+
+        <div class="flex">
+          <p class="content">Do you Accept All Major Credit Cards??</p>
+          <div class="panel">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem error cumque ut praesentium, voluptate sequi amet
+            totam suscipit voluptatibus nobis repudiandae illo asperiores rem
+            necessitatibus consectetur fugiat sint nemo tempore.
+          </div>
+        </div>
+        <div class="flex">
+          <p class="content">Do you Accept All Major Credit Cards??</p>
+          <div class="panel">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem error cumque ut praesentium, voluptate sequi amet
+            totam suscipit voluptatibus nobis repudiandae illo asperiores rem
+            necessitatibus consectetur fugiat sint nemo tempore.
+          </div>
+        </div>
+
+        <div class="flex">
+          <p class="content">Do you Accept All Major Credit Cards??</p>
+          <div class="panel">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Exercitationem error cumque ut praesentium, voluptate sequi amet
+            totam suscipit voluptatibus nobis repudiandae illo asperiores rem
+            necessitatibus consectetur fugiat sint nemo tempore.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    /* Toggle between adding and removing the "active" and "show" classes when the user clicks on one of the "Section" buttons. The "active" class is used to add a background color to the current button when its belonging panel is open. The "show" class is used to open the specific accordion panel */
+    var acc = document.getElementsByClassName("content");
+    var i;
+    for (i = 0; i < acc.length; i++) {
+      acc[i].onclick = function () {
+        this.classList.toggle("active");
+        this.nextElementSibling.classList.toggle("show");
+      };
+    }
+  </script>
+</html>

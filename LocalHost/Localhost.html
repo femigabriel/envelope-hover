@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <input class="storage" type="text">
+        <p class="text">Text</p>
+        <button class="button">Save</button>
+    </div>
+    <script>
+        const storageInput = document.querySelector('.storage')
+        const text = document.querySelector('.text')
+        const button = document.querySelector('.button')
+        const storedInput = localStorage.getItem('textinput')
+
+
+        if(storageInput) {
+            text.textContent = storedInput
+        }
+        storageInput.addEventListener('input', letter =>{
+            text.textContent = letter.target.value
+        }) 
+        
+        const saveToLocalStorage = () => {
+            localStorage.setItem('textinput', text.textContent)
+        }
+        
+        button.addEventListener('click', saveToLocalStorage)
+</script>
+</body>
+</html>

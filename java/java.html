@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="java.css" />
+    <title>Java Background-changer</title>
+  </head>
+  <body class="body">
+    <div class="container">
+      <div class="main">
+        <div class="background">
+          <h1>Background color: <span id="text"></span></h1>
+        </div>
+        <button id="button">CLICK ME</button>
+      </div>
+    </div>
+    <script>
+      const button = document.getElementById("button");
+      button.addEventListener("click", randomcolors);
+
+    //   colorslength = 5;
+      function randomcolors() {
+        Math.floor(Math.random() * 16);
+        const colors = ["red", "pink", "aqua", "chocolate", "blue", "yellow", "gold", "khaki", "white", "gray", "lawngreen", "bisque", "cyan", "brown", "coral"];
+           
+            const randomNumber = Math.floor(Math.random() * 16)
+            document.body.style.backgroundColor = colors[randomNumber];
+            const text = document.getElementById("text");
+            text.innerText = colors[randomNumber];
+       
+        } 
+        
+        
+    </script>
+  </body>
+</html>

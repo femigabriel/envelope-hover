@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css"
+    />
+    <link rel="stylesheet" href="menu.css" />
+    <title>Menu-Page</title>
+  </head>
+  <body>
+
+    <div id="header">
+      <h1>Coding <span>Addict</span></h1>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> <i class="las la-times"></i></a>
+
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Project</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <!-- Use any element to open the sidenav -->
+    <div id="icon">
+      <span onclick="openNav()"><i class="las la-bars"></i></span>
+    </div>
+
+    
+    <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+    <!-- <div id="main">
+      ...
+    </div> -->
+    <script>
+     
+
+        /* Set the width of the side navigation to 650px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "310px";
+}
+
+/* Set the width of the side navigation back to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+    </script>
+  </body>
+</html>

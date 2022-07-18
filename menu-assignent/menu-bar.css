@@ -1,0 +1,50 @@
+body {
+    background: whitesmoke;
+    color:#222;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  background: #fff;  
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+   /* height: 550px; */
+   padding-bottom: ;
+width: 650px;
+} 
+#icon {
+    float: right;
+    margin: 25px 0px;
+}
+.las {
+    color: blue;
+    
+
+}
+#header {
+    display: flex; 
+    font-size: 38px;
+    padding: 10px 40px;
+    
+
+}
+h1 {
+    font-size: 38px;
+width: 100%;
+text-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+span {
+    color: blue;
+    width: 100%;
+    
+}
+ul{
+    list-style: none;
+    font-size: 26px;
+    font-weight: 600;
+   
+}
+li {
+    padding-bottom: 20px;
+}

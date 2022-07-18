@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+      </head>
+      <body>
+        <div class="app">
+          <div class="parent">
+            <h1>Hover me</h1>
+            <div class="child"></div>
+          </div>
+        </div>
+
+        <style>
+            body {
+                
+            }
+          .app {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 700px;
+            border: 2px solid whitesmoke;
+          }
+          .parent {
+            background: white;
+            width: 400px;
+            height: 200px;
+          }
+          h1 {
+            padding-left: 30px;
+            /* padding-right: 20px; */
+            font-size: 45px;
+            position: fixed;
+           
+          }
+          .child {
+            padding-left: 60px;
+            /* padding-right: 60px; */
+            background: #07beb8;
+            width: 200px;
+            height: 200px;
+            transition: transform 1s;
+          }
+          .parent:hover .child {
+            transform: translateX(100%);
+          }
+        </style>
+      </body>
+    </html>
+  </body>
+</html>
